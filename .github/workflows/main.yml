@@ -14,4 +14,4 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
       - name: Build with Maven & Gradle
-        run: mvn install; mvn -f pom-spring-boot.xml install; ./gradlew build
+        run: mvn install; mvn -f pom-spring-boot.xml install; ./gradlew build -Pmodules=studio
